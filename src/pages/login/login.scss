@@ -1,0 +1,93 @@
+$blue : #0984e3;
+$black : #333;
+$white : #fff;
+$gold : gold;
+$light-color : #666;
+$light-bg : #eee;
+$border : .2rem solid $black;
+$box-shadow : 0 .5rem 1rem rgba(0,0,0,.2);
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: .5rem;
+    padding:1rem 3rem;
+    font-size: 1.7rem;
+    color:$white;
+    cursor: pointer;
+    background: $blue;
+  
+    &:hover{
+      background: $black;
+    }
+  }
+  
+.register,
+.login{
+    padding: 2rem;
+
+  form{
+    max-width: 40rem;
+    border-radius: .5rem;
+    padding:5rem;
+    background: $white;
+    box-shadow: $box-shadow;
+    border:$border;
+    margin:3rem auto;
+    margin-top: auto;
+
+
+    h3{
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      color:$black;
+      text-transform: uppercase;
+    }
+    
+    .box{
+      width: 100%;
+      padding:1.2rem 1.4rem;
+      border-radius: .5rem;
+      border:$border;
+      font-size: 1.6rem;
+      color:$light-color;
+      text-transform: none;
+      margin:.7rem 0;
+    }
+
+    .remember{
+      display: flex;
+      align-items: center;
+      gap:.5rem; 
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+
+      label{
+        font-size: 1.5rem;
+        color:$light-color;
+        cursor: pointer;
+      }
+    }
+
+    .btn{
+      width: 100%;
+      text-align: center;
+
+      &.link{
+        background: $black;
+
+        &:hover{
+          background: $blue;
+        }
+      }
+    }
+
+    p{
+      padding-top: 2rem;
+      font-size: 1.5rem;
+      color:$light-color;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  }
+}

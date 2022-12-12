@@ -1,0 +1,49 @@
+.addCategory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+    margin: 2rem;
+    input{
+      padding: 1rem;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+
+    .formInput {
+      width: 40%;
+      padding: 1rem;
+
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+          cursor: pointer;
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 2rem;
+        font-size: 2rem;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+    }
+
+    button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  }
+  
