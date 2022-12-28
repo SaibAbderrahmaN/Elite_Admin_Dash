@@ -14,10 +14,20 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
+import { signout } from "../../actions";
+import { useDispatch } from "react-redux";
 
 
 const Sidebar = () => {
   const { dispatch } = useContext(DarkModeContext);
+  const Dispatch = useDispatch()
+
+
+
+  const logout = () => {
+    Dispatch(signout());
+    
+ }
   return (
     <div className="sidebar">
       <div className="top">
@@ -34,6 +44,12 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
+          <Link to="/teachers" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Teachers</span>
+            </li>
+          </Link>
           <Link to="/groupe" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
@@ -93,7 +109,7 @@ const Sidebar = () => {
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span onClick={logout}>Logout</span>
           </li>
         </ul>
       </div>

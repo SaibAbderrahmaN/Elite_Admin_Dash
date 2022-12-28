@@ -43,7 +43,7 @@ const Course = () => {
       <Navbar/>
       <div className='datatable'>
                 <div className="datatableTitle">
-                  Add New groupe
+                  Add New courses
                   <Link to="/courses/new" className="link">
                     Add New
                   </Link>

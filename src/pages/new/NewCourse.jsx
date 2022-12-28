@@ -5,9 +5,8 @@ import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
-import { addProduct, deleteProductById } from "../../actions/index";
+import { addProduct } from "../../actions/index";
 import  RitchTextEditor from "../../RichTextEditor/RitchTextEditor";
-import parse from 'html-react-parser';
 
 
 const NewCourse = ({ inputs, title }) => {

@@ -16,6 +16,10 @@ import Category from "./pages/Category/Category";
 import Course from "./pages/Course/Course";
 import NewCourse  from './pages/new/NewCourse'
 import Orders from './pages/Orders/Orders.jsx'
+import Teachers from "./pages/Teachers/Teachers";
+import NewTeacher from "./pages/new/NewTeacher";
+import Pages from "./pages/Page/Pages";
+import NewPages from "./pages/new/NewPages";
 
 
 function App() {
@@ -55,6 +59,10 @@ function App() {
               <Route index element={<Course />} />
               <Route path="new"element={<NewCourse inputs={productInputs} title="Add New courses" />}/>
             </Route>
+            <Route path="pages">
+              <Route index element={<Pages />} />
+              <Route path="new"element={<NewPages inputs={productInputs} title="Add New courses" />}/>
+            </Route>
 
 
             <Route path="products">
@@ -67,12 +75,17 @@ function App() {
             </Route>
             <Route path="groupe">
               <Route index element={<Groups />} />
-              <Route path="new"element={<NewGroupe inputs={productInputs} title="Add New Product" />}/>
+              <Route path="new"element={<NewGroupe inputs={productInputs} title="Add New Groups " />}/>
+
+            </Route>
+            <Route path="teachers">
+              <Route index element={<Teachers />} />
+              <Route path="new"element={<NewTeacher inputs={productInputs} title="Add New Teacher" />}/>
+
 
             </Route>
             <Route path="orders">
               <Route index element={<Orders />} />
-
             </Route>
           </Route>
         </Routes>
